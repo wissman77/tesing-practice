@@ -18,3 +18,9 @@ test('sentence test', () => {
     '.emoswa si tcejorp nido eht'
   );
 });
+
+test('mixed letters sentence test', () => {
+  expect(reverseString('My Profile WaS HaCkEd.')).toBe(
+    '.dEkCaH SaW eliforP yM'
+  );
+});
