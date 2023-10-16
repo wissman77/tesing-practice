@@ -1,5 +1,5 @@
 function isCapLetter(letter) {
-  return /[A_Z]/.test(letter);
+  return /[A-Z]/.test(letter);
 }
 
 function isSmallLetter(letter) {
