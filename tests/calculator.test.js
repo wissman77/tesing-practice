@@ -22,3 +22,10 @@ test('divide function test', () => {
   expect(calculator.divide('three', 'one')).toMatch('elements must be numbers');
   expect(calculator.divide(3, 0)).toMatch(/divide by zero/);
 });
+
+test('multiply function test', () => {
+  expect(calculator.multiply(3, 3)).toEqual(9);
+  expect(calculator.multiply(15, 3)).toBe(45);
+  expect(calculator.multiply(0.4, 0.2)).toBeCloseTo(0.08);
+  expect(calculator.multiply('4', 'one')).toMatch('elements must be numbers');
+});
