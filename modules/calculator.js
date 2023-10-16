@@ -15,6 +15,15 @@ const calculator = {
     }
     return a - b;
   },
+  divide(a, b) {
+    if (!this.isValide(a, b)) {
+      return 'elements must be numbers';
+    }
+    if (b === 0) {
+      return 'can not divide by zero';
+    }
+    return a / b;
+  },
 };
 
 export default calculator;
