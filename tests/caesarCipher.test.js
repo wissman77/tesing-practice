@@ -17,3 +17,7 @@ test('sentence with caps only', () => {
   expect(caesarCipher('FIREFOX IS GREAT', 7)).toBe('MPYLMVE PZ NYLHA');
   expect(caesarCipher('FIREFOX IS GREAT', 20)).toBe('ZCLYZIR CM ALYUN');
 });
+
+test('empty string test', () => {
+  expect(caesarCipher('')).toBe('');
+});
