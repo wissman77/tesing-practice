@@ -17,3 +17,7 @@ test('All caps letter should return as is', () => {
     'THAT IS AN IMPORTANT CASE!'
   );
 });
+
+test('All small letters shoud capitalize first leter', () => {
+  expect(capitalize('what is the matter?')).toBe('What is the matter?');
+});
