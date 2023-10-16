@@ -7,3 +7,10 @@ test('empty etring', () => {
 test('palindrome string test', () => {
   expect(reverseString('racecar')).toBe('racecar');
 });
+
+test('word test', () => {
+  expect(reverseString('wissman')).toBe('namssiw');
+  expect(reverseString('wissman')).not.toBe('wissman');
+});
+
+
