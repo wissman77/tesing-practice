@@ -21,3 +21,10 @@ test('sentence with caps only', () => {
 test('empty string test', () => {
   expect(caesarCipher('')).toBe('');
 });
+
+test('with numbers and punctuations', () => {
+  expect(caesarCipher('wissman77', 9)).toBe('frbbvjw77');
+  expect(caesarCipher('wissman77', 11)).toBe('htddxly77');
+  expect(caesarCipher('How Are You?', 11)).toBe('Szh Lcp Jzf?');
+  expect(caesarCipher(`I'm Wissman77`, 4)).toBe(`M'q Amwwqer77`);
+});
