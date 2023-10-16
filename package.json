@@ -4,7 +4,8 @@
   "description": "a testing modules for various kinds of functions",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "watch": "jest --watchAll"
   },
   "keywords": [
     "jest",
