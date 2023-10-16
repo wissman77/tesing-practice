@@ -24,6 +24,12 @@ const calculator = {
     }
     return a / b;
   },
+  multiply(a, b) {
+    if (!this.isValide(a, b)) {
+      return 'elements must be numbers';
+    }
+    return a * b;
+  },
 };
 
 export default calculator;
