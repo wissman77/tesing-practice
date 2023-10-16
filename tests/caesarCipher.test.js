@@ -11,3 +11,9 @@ test('sentence with letters only', () => {
     'qrsraq gur rnfg jnyy bs gur pnfgyr'
   );
 });
+
+test('sentence with caps only', () => {
+  expect(caesarCipher('FIREFOX IS GREAT', 3)).toBe('ILUHIRA LV JUHDW');
+  expect(caesarCipher('FIREFOX IS GREAT', 7)).toBe('MPYLMVE PZ NYLHA');
+  expect(caesarCipher('FIREFOX IS GREAT', 20)).toBe('ZCLYZIR CM ALYUN');
+});
