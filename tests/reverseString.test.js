@@ -13,4 +13,8 @@ test('word test', () => {
   expect(reverseString('wissman')).not.toBe('wissman');
 });
 
-
+test('sentence test', () => {
+  expect(reverseString('the odin project is awsome.')).toBe(
+    '.emoswa si tcejorp nido eht'
+  );
+});
