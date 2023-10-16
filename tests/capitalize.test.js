@@ -10,4 +10,10 @@ test('captlized sentence show not changes', () => {
 
 test('mixed sentence', () => {
   expect(capitalize('the mAn saw the fox.')).toBe('The mAn saw the fox.');
-})
+});
+
+test('All caps letter should return as is', () => {
+  expect(capitalize('THAT IS AN IMPORTANT CASE!')).toBe(
+    'THAT IS AN IMPORTANT CASE!'
+  );
+});
