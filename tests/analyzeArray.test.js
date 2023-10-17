@@ -21,3 +21,13 @@ test('array with 6 elements', () => {
     length: 6,
   });
 });
+
+
+test('array with 6 negative elements', () => {
+  expect(analyzeArray([-1, -8, -3, -4, -2, -6])).toMatchObject({
+    average: -4,
+    min: -8,
+    max: -1,
+    length: 6,
+  });
+});
